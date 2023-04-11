@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <title>M&L Coffee</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navlogo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="navlinks">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+             </nav>
+        </div>
+        <div class="navlinks">
+            <button class="cart">Cart</button>
+        </div>
+        
+
+
+        </div>
+        
+    </div>
+    <div class="cartopen">
+        
+        <div class="carttable">
+            <h1>Cart</h1>
+            <table id="carttablevalue">
+                <thead>
+                  <tr>
+                    <th class="tableheader">Product</th>
+                    <th class="tableheader">Variety</th>
+                    <th class="tableheader">Quantity</th>
+                    <th class="tableheader">Price</th>
+                  </tr>
+                  <table>
+                    
+                  </table>
+                </thead>
+              </table>
+              
+        </div>
+        <div class="cartbuttons">
+            <button class="clearcart">
+                Clear Cart
+            </button>
+            <button class="checkout">
+                Checkout
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="landingpage">
+        <div class="headertitle">
+            <h1>Awaken your senses with <br>our premium coffee blends </h1>
+            <p>At M&L Coffee, we offer a variety of premium coffee blends, including drip bag coffee and ground coffee. We take pride in our high-quality products and strive to provide excellent customer service.</p>
+            <button class="orderbutton">Order Now</button>
+        </div>
+    </div>
+    <main>
+        <section id = "about">
+            <div class="aboutheader">
+                <h1>About <span>us</span></h1>
+            </div>
+            <div class="aboutcontent">
+                <div class="aboutlogo">
+                    <img src="images/logo2.png" alt="" srcset="">
+                </div>
+                <div class="aboutrightside">
+                    <h1>Who are we?</h1>
+                    <div class="aboutcontenttext">
+                        <p>M&L Coffee was founded on February 14, 2020 in Paranaque, Philippines by Laarni B. Marquez, a coffee enthusiast and entrepreneur. Our business specializes in online sales of high-quality drip bag coffee and ground coffee, sourced from the finest coffee beans and roasted to perfection. We take pride in providing our customers with a rich and flavorful coffee experience, while also promoting sustainability and ethical practices in the coffee industry. At M&L Coffee, we are committed to delivering a seamless online shopping experience and exceptional customer service.</p>
+                        <button class="aboutlearnmore">Learn More</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id = "products">
+            <div class="productsheader">
+                <h1>Our <span>Products</span></h1>
+            </div>
+
+            <div class="mnlproducts">
+                <div class="product">
+                    <img src="images/singles.png" alt="">
+                    <div class="descriptionchoices">
+                        <p class="productdescription">
+                            Single drip coffee sealed in premium packaging. You can choose from Barako (black), Arabica (kraft) or Robusta (white).
+                        </p>
+                        <div class="variantprices">
+                            <div class="variant">
+                                <p>Barako (Black)</p>
+                                <p>Arabica (Kraft)</p>
+                                <p>Robusta (White)</p>
+                            </div>
+                            <div class="prices">
+                                <p>₱23</p>
+                                <p>₱25</p>
+                                <p>₱23</p>
+                            </div>
+                            
+                        </div>
+                        <div class="choices">
+                            <p>Choose your variant:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <select name="variant" id="variant">                                       
+                                            <option value="Barako (Black)">Barako (Black)</option>                                                                              
+                                            <option value="Arabica (Kraft)">Arabica (Kraft)</option>                                                                              
+                                            <option value="Robusta (White)">Robusta (White)</option>                                        
+                                        </select>
+                                    </div>
+                                </form> 
+                            </div>
+                            <p>Quantity:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <input class = "quantity withvariant" type="text" value="1">                                                                                                                      
+                                    </div>
+                                </form> 
+                            </div>
+
+                            <button class = "addtocart withvariant" value = "Singles">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="product">
+                    <img src="images/mixedpack.png" alt="">
+                    <div class="descriptionchoices">
+                        <p class="productdescription">
+                            Contains 3drip bags each of Barako, Arabica and Robusta packed and sealed in a Silver Stand-Up Pouch.
+                        </p>
+                        <p>₱180</p>
+
+                        <div class="choices">
+                            
+                            <p>Quantity:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <input class = "quantity withoutvariant"  type="text" value="1">                                                                                                                      
+                                    </div>
+                                </form> 
+                            </div>
+
+                            <button class = "addtocart withoutvariant" value = "Mixed Pack">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="product">
+                    <img src="images/triopack.png" alt="">
+                    <div class="descriptionchoices">
+                        <p class="productdescription">
+                        Contains one drip bag each of Barako, Arabica and Robusta. You can choose from black or kraft stand-up pouch.
+                        </p>
+                        <p>₱65</p>
+                        <div class="choices">
+                            <p>Choose your variant:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <select name="variant" id="variant">                                       
+                                            <option value="Black stand-up pouch">Black stand-up pouch</option>                                                                              
+                                            <option value="Kraft stand-up pouch">Kraft stand-up pouch</option>                                                                                                                                                      
+                                        </select>
+                                    </div>
+                                </form> 
+                            </div>
+                            <p>Quantity:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <input  class = "quantity withvariant" type="text" value="1">                                                                                                                      
+                                    </div>
+                                </form> 
+                            </div>
+
+                            <button class = "addtocart withvariant" value = "Trio Pack">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="product">
+                    <img src="images/250gblackpouch.png" alt="">
+                    <div class="descriptionchoices">
+                        <p class="productdescription">
+                            250g of premium ground coffee packed and sealed in a black pouch w/ one-way de-gassing valve to keep distinctive coffee quality.
+                        </p>
+                        <div class="variantprices">
+                            <div class="variant">
+                                <p>Barako (Black)</p>
+                                <p>Arabica (Kraft)</p>
+                                <p>Robusta (White)</p>
+                            </div>
+                            <div class="prices">
+                                <p>₱150</p>
+                                <p>₱180</p>
+                                <p>₱150</p>
+                            </div>
+                            
+                        </div>
+                        <div class="choices">
+                            <p>Choose your variant:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <select name="variant" id="variant">                                       
+                                            <option value="Barako (Black)">Barako (Black)</option>                                                                              
+                                            <option value="Arabica (Kraft)">Arabica (Kraft)</option>                                                                              
+                                            <option value="Robusta (White)">Robusta (White)</option>                                        
+                                        </select>
+                                    </div>
+                                </form> 
+                            </div>
+                            <p>Quantity:</p>
+                            <div class="variantchoices">
+                                <form>
+                                    <div class="options">
+                                        <input class = "quantity withvariant" type="text" value="1">                                                                                                                      
+                                    </div>
+                                </form> 
+                            </div>
+
+                            <button class = "addtocart withvariant" value="250g pack">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="contact">
+            <div class="contactheader">
+                <h1>Contact <span>us</span></h1>
+            </div>
+            <div class="contactcontainer">
+                <div class="contactmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61808.00779638469!2d120.97700331222491!3d14.484661412049608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ce5df9175d09%3A0x2d041bbb0b2842e5!2sPara%C3%B1aque%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1680676322495!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contactform">
+                    <div class="form">
+                        
+                            <label for="name">Name:</label><br>
+                            <input type="text"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="text"><br>
+                            <label for="num">Contact Number:</label><br>
+                            <input type="text"><br>
+                            <label for="">Inquiry:</label><br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                            <button class="submitbutton">
+                                Submit
+                            </button>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        
+        <div class="footercontent">
+            <div class="footerlogo">
+                <img src="images/logo3.png" alt="">
+            </div>
+            <div class="footerlinks">
+                
+                    <h3>Follow us</h3>
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                
+            </div>
+            <div class="footerlinks">
+                <h3>About us</h3>
+                <a href="">About us</a>
+                <a href="">Contact us</a>
+            </div>
+            <div class="footerlinks">
+                <h3>How to order</h3>
+                <a href="">Products</a>
+                <a href="">Shopee</a>
+                <a href="">Lazada</a>
+            </div>
+
+            
+        </div>
+        
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

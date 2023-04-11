@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    background-color: black;
+    border-bottom: 2px solid gray;
+}
+.navlogo img{
+    width: 135.5px;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.navlinks a {
+    margin-left: 60px;
+    color: rgb(134, 102, 52);
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.1s ease-in;
+  }
+.cart {
+    background: none;
+    border: none;
+    color: rgb(134, 102, 52);
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+.cart:hover {
+    border-bottom: 4px solid rgb(134, 102, 52);
+}
+.navlinks a:hover {
+    border-bottom: 4px solid rgb(134, 102, 52);
+}
+.landingpage {
+    background: url("images/background.png") no-repeat center center/cover;
+    height: 89.3vh;
+    color: rgb(134, 102, 52);
+    border-bottom: 2px solid gray;
+}
+
+.headertitle {
+    position: absolute;
+    top: 30%;
+    display: block;
+    justify-content: left;
+    margin-left: 60px;
+    width: 40%;
+}
+.headertitle h1, p {
+    font-family: 'Libre Baskerville', serif;
+    color: #F9F5EB;
+}
+.headertitle h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.headertitle p {
+    font-size: 20px;
+    line-height: 40px;
+}
+.orderbutton {
+    margin-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: #F9F5EB;
+    background-color: rgb(134, 102, 52);
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+.orderbutton:hover {
+    opacity: 75%;
+}
+.aboutheader, .contactheader {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(134, 102, 52);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+.aboutheader span, .contactheader span {
+    color: #F9F5EB;
+}
+.aboutcontent {
+    margin: 60px 60px 120px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(134, 102, 52);
+}
+.aboutcontenttext{
+    color: #F9F5EB;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.aboutlogo, .aboutcontenttext {
+    padding: 30px;
+}
+.aboutlogo {
+    background-color: #F9F5EB;
+}
+
+.aboutrightside h1 {
+    color: #F9F5EB;
+    text-align: center;
+    font-size: 40px;
+    
+}
+.aboutlearnmore {
+    margin-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.aboutlearnmore:hover {
+    opacity: 75%;
+}
+footer {
+    color: rgb(134, 102, 52);
+}
+main {
+    border-bottom: 2px solid gray;
+}
+#about {
+    border-bottom: 2px solid gray;
+}
+
+.hamburger-icon {
+    display: none;
+}
+.hamburger {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(134, 102, 52);
+    margin: 6px 0;
+  }
+.productsheader {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(134, 102, 52);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+.productsheader span {
+    color: #F9F5EB;
+}
+.mnlproducts {
+    margin: 60px 60px 120px 60px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-gap: 40px;
+}
+.product img {
+    width: 400px;
+    padding: 20px;
+    background-color: #F9F5EB;
+    margin-right: 30px;
+}
+.product {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(134, 102, 52);
+}
+
+.descriptionchoices {
+    display: block;
+    margin: 30px;
+}
+.descriptionchoices > p {
+    margin-bottom: 30px;
+    
+}
+.descriptionchoices p, select, input {
+    font-size: 20px;
+}
+.choices p {
+    margin: 10px 0px;
+}
+.choices input {
+    width: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.addtocart {
+    margin-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+.addtocart:hover {
+    opacity: 75%;
+}
+#products {
+    border-bottom: 2px solid gray;
+}
+.options input, .options select {
+    background-color: #F9F5EB;
+    color: rgb(134, 102, 52);
+    font-family: 'Libre Baskerville', serif;
+}
+.variantprices {
+    display: flex;
+    gap: 10px;
+}
+.cartopen {
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.carttable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cartbuttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.cartbuttons button{
+    margin-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+.cartbuttons button:hover{
+    opacity: 75%;
+}
+td {
+    text-align: center;
+    padding: 5px 10px 20px 10px;
+}
+table, tr, td, th {
+    border: 1px solid black;
+}
+.carttable h1 {
+    margin: 20px 0px;
+    
+}
+.tableheader {
+    padding: 0px 20px 20px 20px;
+    font-size: 20px;
+}
+.contactcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F5EB;
+    margin: 60px;
+}
+.contactmap {
+    padding: 30px;
+}
+.contactform {
+    background-color: rgb(134, 102, 52);
+    color: #F9F5EB;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    padding: 30px;
+    width: 100%;
+    height: 622px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+.form input {
+    margin: 10px 0px;
+    padding: 10px 30px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(134, 102, 52);
+}
+.form textarea {
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    padding: 10px 30px;
+    
+    color: rgb(134, 102, 52);
+}
+.submitbutton {
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(134, 102, 52);
+    background-color: #F9F5EB;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+.submitbutton:hover {
+    opacity: 75%;
+}
+
+
+
+
+footer {
+    padding: 60px;
+    background-color: black;
+}
+.footercontent {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerlogo img {
+    width: 200px;   
+}
+.footerlinks a, h3 {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: rgb(134, 102, 52);
+}
+.footerlinks h3 {
+    font-size: 30px;
+}
+.footerlinks a {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        background-color: black;
+        scroll-behavior: smooth;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: black;
+        border-bottom: 2px solid gray;
+    }
+    .navlogo img{
+        width: 67.75px;
+        height: 31px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    .navlinks a {
+        margin-left: 60px;
+        color: rgb(134, 102, 52);
+        text-decoration: none;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        font-size: 20px;
+        transition: 0.1s ease-in;
+        display: none;
+      }
+    .cart {
+        background: none;
+        border: none;
+        color: rgb(134, 102, 52);
+        text-decoration: none;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.1s ease-in;
+        
+    }
+    
+    .cartopen {
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        z-index: 1;
+    }
+    .carttable{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .cartbuttons {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .cartbuttons button{
+        margin-top: 20px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        height: 30px;
+        width: 75px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+    }
+    .cartbuttons button:hover{
+        opacity: 75%;
+    }
+    td {
+        text-align: center;
+        padding: 5px 10px 20px 10px;
+    }
+    table, tr, td, th {
+        border: 1px solid black;
+        font-size: 10px;    
+    }
+    .carttable h1 {
+        margin: 20px 0px;
+        
+    }
+    .tableheader {
+        padding: 0px 20px 20px 20px;
+        font-size: 10px;
+    }
+
+
+    .landingpage {
+        background: url("images/background.png") no-repeat center center/cover;
+        height: 89.3vh;
+        color: rgb(134, 102, 52);
+        border-bottom: 2px solid gray;
+    }
+    
+    .headertitle {
+        position: absolute;
+        top: 20%;
+        display: block;
+        justify-content: left;
+        margin-left: 30px;
+        width: 40%;
+    }
+    .headertitle h1, p {
+        font-family: 'Libre Baskerville', serif;
+        color: #F9F5EB;
+    }
+    .headertitle h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .headertitle p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .orderbutton {
+        margin-top: 20px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: #F9F5EB;
+        background-color: rgb(134, 102, 52);
+        height: 30px;
+        width: 75px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: none;
+    }
+    .orderbutton:hover {
+        opacity: 75%;
+    }
+    .aboutheader, .contactheader {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(134, 102, 52);
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        font-size: 15px;
+        
+    }
+    
+    .aboutheader span, .contactheader span {
+        color: #F9F5EB;
+    }
+    .aboutcontent {
+        margin: 60px 60px 120px 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(134, 102, 52);
+    }
+    .aboutcontenttext{
+        color: #F9F5EB;
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .aboutlogo, .aboutcontenttext {
+        padding: 30px;
+    }
+    .aboutlogo {
+        background-color: #F9F5EB;
+        
+    }
+    .aboutlogo img {
+        width:210px;
+        
+    }
+    .aboutrightside h1 {
+        color: rgb(134, 102, 52);
+        text-align: center;
+        font-size: 20px;
+        background-color: #F9F5EB;
+        padding: 10px;
+        
+    }
+    .aboutrightside p {
+        
+        font-size: 15px;
+        
+    }
+    .aboutlearnmore {
+        margin-top: 20px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        height: 30px;
+        width: 75px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+    }
+    
+    .aboutlearnmore:hover {
+        opacity: 75%;
+    }
+    footer {
+        color: rgb(134, 102, 52);
+    }
+    main {
+        border-bottom: 2px solid gray;
+    }
+    #about {
+        border-bottom: 2px solid gray;
+    }
+    
+    
+    .productsheader {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(134, 102, 52);
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        font-size: 15px;
+    }
+    
+    .productsheader span {
+        color: #F9F5EB;
+    }
+    .mnlproducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product img {
+        width: 96%;
+        padding: 5px;
+        background-color: #F9F5EB;
+        margin-right: 1px;
+    }
+    .product {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(134, 102, 52);
+    }
+    
+    .descriptionchoices {
+        display: block;
+        margin: 10px;
+        
+    }
+    .descriptionchoices > p {
+        margin-bottom: 10px;
+        
+    }
+    .descriptionchoices p, select, input {
+        font-size: 15px;
+    }
+    .choices p {
+        margin: 5px 0px;
+    }
+    .choices input {
+        width: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .addtocart {
+        margin-top: 10px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        height: 30px;
+        width: 75px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+    }
+    .addtocart:hover {
+        opacity: 75%;
+    }
+    #products {
+        border-bottom: 2px solid gray;
+    }
+    .options input, .options select {
+        background-color: #F9F5EB;
+        color: rgb(134, 102, 52);
+        font-family: 'Libre Baskerville', serif;
+    }
+    .variantprices {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .contactcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F9F5EB;
+       
+    }
+    .contactmap {
+        padding: 30px;
+        
+    }
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+    .contactform {
+        background-color: rgb(134, 102, 52);
+        color: #F9F5EB;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        padding: 30px;
+        width: 100%;
+        height: 622px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        padding: 30px;
+        border-radius: 30px;
+        
+    }
+    .form input {
+        margin: 10px 0px;
+        padding: 10px 10px;
+        width: 130px;
+        height: 5px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: rgb(134, 102, 52);
+    }
+    .form textarea {
+        margin-top: 10px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        padding: 10px 10px;
+        width: 130px;
+        color: rgb(134, 102, 52);
+    }
+    .submitbutton {
+        margin-top: 10px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 10px;
+        color: rgb(134, 102, 52);
+        background-color: #F9F5EB;
+        height: 40px;
+        width: 150px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+    }
+    .submitbutton:hover {
+        opacity: 75%;
+    }
+    
+    
+    
+    footer {
+        padding: 20px;
+        background-color: black;
+    }
+    .footercontent {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerlogo img {
+        width: 67.75px;
+        height: 31px;   
+    }
+    .footerlinks a, h3 {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: rgb(134, 102, 52);
+    }
+    .footerlinks h3 {
+        font-size: 15px;
+    }
+    .footerlinks a {
+        font-size: 10px;
+    }
+}
+
+
